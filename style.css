@@ -1,0 +1,95 @@
+.main_wrapper {
+    display: grid;
+    width: 350px 450px;
+    height: 500px;
+    grid-template-columns: 350px 450px ;
+    grid-template-rows: 500px  ;
+    grid-gap: 40px;
+    grid-template-areas: 
+        "main_block  favorite_city"
+    ;
+    margin: 20px 0 0 400px;
+
+}
+
+.wrapper {
+    grid-area: 'main_block';
+    display: grid;
+    grid-template-columns:  280px ;
+    grid-template-rows: 100px 300px ;
+    grid-template-areas: 
+        'input add_city'
+        'info info'
+    ;
+    /* margin: 0 100px; */
+
+    border: 1px solid #000;
+    border-radius: 20px ;
+    /* text-align: center; */
+
+    
+}
+
+.form_main_input {
+    margin: 10px 0 0 50px;
+}
+
+.main_input { 
+    grid-area: input;
+    width: 200px;
+    height: 30px;
+    border-radius: 15px;
+    
+}
+
+
+.wrapper_info {
+    grid-area: info;
+    font-family: Verdana, sans-serif;
+    margin-left: 50px
+}
+
+
+.icon_add_favorite {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    grid-area: 'add_city';
+    margin: 20px 0 0 0;
+}
+
+.wrapper_favorite {
+    grid-area: "favorite_city";
+    padding: 20px;
+    width: 280px;
+    height: 450px;
+    border: 1px solid #000;
+    border-radius: 15px;
+}
+
+.item_favorite_city {
+    width: 280px ;
+    height: 16px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 2px 0 2px 5px;
+    margin: 10px 0 0 0;
+    
+}
+
+.delete_city {
+    float: right;
+    margin: 0 8px 0 0 ;
+    cursor: pointer;
+}
+
+.city_name {
+    cursor: pointer;
+}
+
+.title_favorite_city {
+    margin: 0 40px 20px 40px;
+    font-size: 19px;
+    font-family: Verdana, sans-serif;
+    
+}
